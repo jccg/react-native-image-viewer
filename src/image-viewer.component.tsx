@@ -462,11 +462,11 @@ export default class ImageViewer extends React.Component<Props, State> {
       }
 
       // 如果此时高度还大于屏幕高度,整体缩放到高度是屏幕高度
-      if (height > screenHeight) {
-        const HeightPixel = screenHeight / height;
-        width *= HeightPixel;
-        height *= HeightPixel;
-      }
+//       if (height > screenHeight) {
+//         const HeightPixel = screenHeight / height;
+//         width *= HeightPixel;
+//         height *= HeightPixel;
+//       }
 
       const Wrapper = ({ children, ...others }: any) => (
         <ImageZoom
