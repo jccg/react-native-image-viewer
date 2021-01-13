@@ -478,6 +478,7 @@ export default class ImageViewer extends React.Component<Props, State> {
           pinchToZoom={this.props.enableImageZoom}
           enableDoubleClickZoom={this.props.enableImageZoom}
           doubleClickInterval={this.props.doubleClickInterval}
+          enableCenterFocus={false}
           {...others}
         >
           {children}
@@ -552,6 +553,7 @@ export default class ImageViewer extends React.Component<Props, State> {
               doubleClickInterval={this.props.doubleClickInterval}
               minScale={this.props.minScale}
               maxScale={this.props.maxScale}
+              enableCenterFocus={false}
             >
               {this!.props!.renderImage!(image.props)}
             </ImageZoom>
